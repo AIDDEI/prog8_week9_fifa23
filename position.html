@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <script defer type="module" src="./src/position.js"></script>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <title>FIFA 23 Career Mode Helper</title>
+</head>
+<body class="background">
+
+    <hr>
+    <h1>Positie Berekenen</h1>
+    <hr><br><br>
+
+    <div class="information">
+        <h3>Voer de velden in, klik op de knop en kom achter de beste positie!</h3>
+        <br><br>
+
+        <div class="left">
+
+            <h4>Speler Rating</h4>
+            <label for="overall">Rating</label>
+            <br>
+            <input type="number" name="overall" id="overall" placeholder="Rating">
+            <br><br>
+
+            <h4>Schieten</h4>
+            <label for="finishing">Afmaken</label>
+            <br>
+            <input type="number" name="finishing" id="finishing" placeholder="Afmaken">
+            <br><br>
+            <label for="positioning">Positie aanval</label>
+            <br>
+            <input type="number" name="positioning" id="positioning" placeholder="Positie aanval">
+            <br><br>
+            <label for="shotPower">Schotkracht</label>
+            <br>
+            <input type="number" name="shotPower" id="shotPower" placeholder="Schotkracht">
+            <br><br>
+            <label for="longShots">Afstandschot</label>
+            <br>
+            <input type="number" name="longShots" id="longShots" placeholder="Afstandschot">
+            <br><br>
+            <label for="penalties">Strafschoppen</label>
+            <br>
+            <input type="number" name="penalties" id="penalties" placeholder="Strafschoppen">
+            <br><br>
+            <label for="volleys">Volleys</label>
+            <br>
+            <input type="number" name="volleys" id="volleys" placeholder="Volleys">
+            <br><br>
+
+            <h4>Dribbelen</h4>
+            <label for="agility">Lenigheid</label>
+            <br>
+            <input type="number" name="agility" id="agility" placeholder="Lenigheid">
+            <br><br>
+            <label for="balance">Balans</label>
+            <br>
+            <input type="number" name="balance" id="balance" placeholder="Balans">
+            <br><br>
+            <label for="reactions">Reactievermogen</label>
+            <br>
+            <input type="number" name="reactions" id="reactions" placeholder="Reactievermogen">
+            <br><br>
+            <label for="composure">Zelfbeheersing</label>
+            <br>
+            <input type="number" name="composure" id="composure" placeholder="Zelfbeheersing">
+            <br><br>
+            <label for="ballControl">Balbeheersing</label>
+            <br>
+            <input type="number" name="ballControl" id="ballControl" placeholder="Balbeheersing">
+            <br><br>
+            <label for="dribbling">Dribbelen</label>
+            <br>
+            <input type="number" name="dribbling" id="dribbling" placeholder="Dribbelen">
+            <br><br>
+
+            <h4>Fysiek</h4>
+            <label for="jumping">Springen</label>
+            <br>
+            <input type="number" name="jumping" id="jumping" placeholder="Springen">
+            <br><br>
+            <label for="stamina">Stamina</label>
+            <br>
+            <input type="number" name="stamina" id="stamina" placeholder="Stamina">
+            <br><br>
+            <label for="strength">Kracht</label>
+            <br>
+            <input type="number" name="strength" id="strength" placeholder="Kracht">
+            <br><br>
+            <label for="aggression">Agressie</label>
+            <br>
+            <input type="number" name="aggression" id="aggression" placeholder="Agressie">
+            <br><br>
+
+        </div>
+
+        <div class="right">
+
+            <h4>Snelheid</h4>
+            <label for="sprintSpeed">Sprintsnelheid</label>
+            <br>
+            <input type="number" name="sprintSpeed" id="sprintSpeed" placeholder="Sprintsnelheid">
+            <br><br>
+            <label for="acceleration">Versnelling</label>
+            <br>
+            <input type="number" name="acceleration" id="acceleration" placeholder="Versnelling">
+            <br><br>
+
+            <h4>Passen</h4>
+            <label for="vision">Visie</label>
+            <br>
+            <input type="number" name="vision" id="vision" placeholder="Visie">
+            <br><br>
+            <label for="crossing">Voorzetten</label>
+            <br>
+            <input type="number" name="crossing" id="crossing" placeholder="Voorzetten">
+            <br><br>
+            <label for="freekickAccuracy">Nauwkeurige Vrije Trap</label>
+            <br>
+            <input type="number" name="freekickAccuracy" id="freekickAccuracy" placeholder="Nauwk. VT">
+            <br><br>
+            <label for="longPassing">Lange pass</label>
+            <br>
+            <input type="number" name="longPassing" id="longPassing" placeholder="Lange pass">
+            <br><br>
+            <label for="shortPassing">Korte pass</label>
+            <br>
+            <input type="number" name="shortPassing" id="shortPassing" placeholder="Korte pass">
+            <br><br>
+            <label for="curve">Effect</label>
+            <br>
+            <input type="number" name="curve" id="curve" placeholder="Effect">
+            <br><br>
+
+            <h4>Verdedigen</h4>
+            <label for="interceptions">Onderscheppingen</label>
+            <br>
+            <input type="number" name="interceptions" id="interceptions" placeholder="Onderscheppingen">
+            <br><br>
+            <label for="headingAccuracy">Nauwkeurige kopbal</label>
+            <br>
+            <input type="number" name="headingAccuracy" id="headingAccuracy" placeholder="Nauwk. kopbal">
+            <br><br>
+            <label for="marking">Verdedigend inzicht</label>
+            <br>
+            <input type="number" name="marking" id="marking" placeholder="vrd. inzicht">
+            <br><br>
+            <label for="standingTackle">Staande tackle</label>
+            <br>
+            <input type="number" name="standingTackle" id="standingTackle" placeholder="Staande tackle">
+            <br><br>
+            <label for="slidingTackle">Sliding</label>
+            <br>
+            <input type="number" name="slidingTackle" id="slidingTackle" placeholder="Sliding">
+            <br><br>
+
+            <h4>Keeper</h4>
+            <label for="goalkeeperHandling">Balbehandeling</label>
+            <br>
+            <input type="number" name="goalkeeperHandling" id="goalkeeperHandling" placeholder="Balbehandeling">
+            <br><br>
+            <label for="goalkeeperDiving">Duiken</label>
+            <br>
+            <input type="number" name="goalkeeperDiving" id="goalkeeperDiving" placeholder="Duiken">
+            <br><br>
+            <label for="goalkeeperPositioning">Keeperspositie</label>
+            <br>
+            <input type="number" name="goalkeeperPositioning" id="goalkeeperPositioning" placeholder="Keeperspositie">
+            <br><br>
+            <label for="goalkeeperReflexes">Reflexen</label>
+            <br>
+            <input type="number" name="goalkeeperReflexes" id="goalkeeperReflexes" placeholder="Reflexen">
+            <br><br>
+            <label for="goalkeeperKicking">Doeltrappen</label>
+            <br>
+            <input type="number" name="goalkeeperKicking" id="goalkeeperKicking" placeholder="Doeltrappen">
+            <br><br>
+
+        </div>
+
+        <div class="center">
+            <button id="positionButton">Bereken de beste positie!</button>
+            <br><br>
+        </div>
+
+        <div id="position" class="prediction">
+        </div>
+
+    </div>
+
+    <hr>
+    <footer>
+        <p>Deze website is gemaakt door Aiden Deighton, student Creative Media en Game Technologies aan de Hogeschool Rotterdam.</p>
+        <div class="socials">
+            <div><a href="mailto:1025660@hr.nl">E-mail</a></div>
+            <div><a href="https://www.instagram.com/aiddei/" target="_blank">Instagram</a></div>
+            <div><a href="https://nl.linkedin.com/in/aiden-deighton-081669234?trk=people-guest_people_search-card" target="_blank">LinkedIn</a></div>
+            <div><a href="https://github.com/AIDDEI/" target="_blank">GitHub</a></div>
+        </div>
+        <p id="copyright">Copyright 2023 Aiden Deighton</p>
+    </footer>
+    <hr>
+
+</body>
+</html>

@@ -63,6 +63,49 @@ button:hover {
     color: #80cfff;   
 }
 
+.information .left {
+    text-align: left;
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 10px;
+    padding-left: 225px;
+}
+
+.information .left label {
+    font-size: 12px;
+}
+
+.information .right {
+    text-align: left;
+    float: right;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 10px;
+    padding-left: 225px;
+}
+
+.information .right label {
+    font-size: 12px;
+}
+
+.information .center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1600px;
+}
+
+.information::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.prediction {
+    font-size: 25px;
+}
+
 /*Footer*/
 footer {
     color: #ffffff;
