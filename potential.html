@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <script defer type="module" src="./src/potential.js"></script>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <title>FIFA 23 Career Mode Helper</title>
+</head>
+<body class="background">
+
+    <hr>
+    <h1>Potentieel Berekenen</h1>
+    <hr><br><br>
+
+    <div class="information">
+        <h3>Voer de velden in, klik op de knop en weet het potentieel!</h3>
+        <br><br>
+
+        <label for="overall">Rating van de speler:</label>
+        <input type="number" name="overall" id="overall" placeholder="Rating">
+        <br><br>
+        <label for="value">Spelerswaarde in euro:</label>
+        <input type="number" name="value" id="value" placeholder="Spelerswaarde">
+        <br><br>
+        <label for="age">Leeftijd van de speler:</label>
+        <input type="number" name="age" id="age" placeholder="Leeftijd">
+        <br><br>
+
+        <button id="potentialButton">Bereken</button>
+        <br><br>
+
+        <div id="potential">
+        </div>
+    </div>
+
+    <hr>
+    <footer>
+        <p>Deze website is gemaakt door Aiden Deighton, student Creative Media en Game Technologies aan de Hogeschool Rotterdam.</p>
+        <div class="socials">
+            <div><a href="mailto:1025660@hr.nl">E-mail</a></div>
+            <div><a href="https://www.instagram.com/aiddei/" target="_blank">Instagram</a></div>
+            <div><a href="https://nl.linkedin.com/in/aiden-deighton-081669234?trk=people-guest_people_search-card" target="_blank">LinkedIn</a></div>
+            <div><a href="https://github.com/AIDDEI/" target="_blank">GitHub</a></div>
+        </div>
+        <p id="copyright">Copyright 2023 Aiden Deighton</p>
+    </footer>
+    <hr>
+
+</body>
+</html>

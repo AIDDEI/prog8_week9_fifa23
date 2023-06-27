@@ -1,0 +1,1 @@
+{"inputUnits":[3],"outputUnits":1,"inputs":{"overall":{"dtype":"number","min":48,"max":91},"value":{"dtype":"number","min":0,"max":190500000},"age":{"dtype":"number","min":16,"max":44}},"outputs":{"potential":{"dtype":"number","min":49,"max":95}},"isNormalized":true}

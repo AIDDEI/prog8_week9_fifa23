@@ -1,0 +1,93 @@
+@font-face {
+    font-family: "EAFont";
+    src: url("../font/easports-webfont.woff") format("woff");
+}
+
+body {
+    font-family: 'EAFont', Arial, sans-serif;
+    text-transform: uppercase;
+    word-spacing: 8px;
+    line-height: 150%;
+    text-align: center;
+    align-items: center;
+}
+
+.background {
+    background-image: url("../img/background.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 50px;
+    color: #ffffff;
+    background-image: linear-gradient(to bottom left, #1e1064, #653d53);
+    padding: 20px;
+    border: 5px solid #ffc598;
+}
+
+hr {
+    border: 2px solid #ffc598;
+}
+
+button {
+    background-color: #80cfff;
+    padding: 8px 12px;
+    margin: 4px;
+    font-size: 1em;
+    border: 0;
+    cursor: pointer;
+    font-family: 'EAFont', Arial, sans-serif;
+    text-transform: uppercase;
+    word-spacing: 8px;
+}
+
+button:hover {
+    background-color: #1e1064;
+    color: #ffffff;
+}
+
+.information {
+    color: #ffffff;
+    background-color: #0000008d;
+    border: 5px solid #ffc598;
+}
+
+.information a {
+    color: #ffffff;
+}
+
+.information a:hover {
+    color: #80cfff;   
+}
+
+/*Footer*/
+footer {
+    color: #ffffff;
+    background-image: linear-gradient(to bottom left, #1e1064, #653d53);
+    border: 5px solid #ffc598;
+    text-align: center;
+}
+
+footer a {
+    color: #ffffff;
+}
+
+footer a:hover {
+    color: #80cfff;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+}
+
+.socials div {
+    padding: 20px;
+}
+
+#copyright {
+    font-size: 12px;
+}
